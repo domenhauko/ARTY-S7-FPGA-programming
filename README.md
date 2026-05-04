@@ -9,7 +9,7 @@ A VHDL project for the **Digilent Arty S7-50** FPGA board using three Digilent P
 The final system lets the user enter a desired two-digit distance with the keypad, measures the actual distance using the ultrasonic sensor, and displays the difference on the seven-segment display.
 
 <p align="center">
-  <img src="docs/images/setup.jpeg" alt="Arty S7 FPGA setup with Pmods" width="650">
+  <img src="images/setup.jpeg" alt="Arty S7 FPGA setup with Pmods" width="650">
 </p>
 
 ---
