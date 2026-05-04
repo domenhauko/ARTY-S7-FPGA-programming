@@ -56,3 +56,10 @@ set_property -dict { PACKAGE_PIN P17   IOSTANDARD LVCMOS33 } [get_ports { ssd_ae
 set_property -dict { PACKAGE_PIN P18   IOSTANDARD LVCMOS33 } [get_ports { ssd_af }]; # JB pin 2
 set_property -dict { PACKAGE_PIN R18   IOSTANDARD LVCMOS33 } [get_ports { ssd_ag }]; # JB pin 3
 set_property -dict { PACKAGE_PIN T18   IOSTANDARD LVCMOS33 } [get_ports { ssd_c  }]; # JB pin 4
+
+## Pmod MAXSONAR on JC upper row
+## MAXSONAR pin 2 RX  -> JC pin 2, driven high by FPGA for free-run behavior
+## MAXSONAR pin 4 PWM -> JC pin 4, captured by FPGA
+
+set_property -dict { PACKAGE_PIN V16   IOSTANDARD LVCMOS33 } [get_ports { maxsonar_rx  }]; # JC pin 2
+set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports { maxsonar_pwm }]; # JC pin 4
