@@ -8,6 +8,30 @@ set_property -dict { PACKAGE_PIN E18   IOSTANDARD LVCMOS33 } [get_ports { led0 }
 ## BTN0 reset input
 set_property -dict { PACKAGE_PIN G15   IOSTANDARD LVCMOS33 } [get_ports { btn0 }];
 
+## Pmod KYPD on JD
+## KYPD pin 1 COL4 -> JD pin 1
+## KYPD pin 2 COL3 -> JD pin 2
+## KYPD pin 3 COL2 -> JD pin 3
+## KYPD pin 4 COL1 -> JD pin 4
+## KYPD pin 5 GND
+## KYPD pin 6 VCC
+## KYPD pin 7 ROW4 -> JD pin 7
+## KYPD pin 8 ROW3 -> JD pin 8
+## KYPD pin 9 ROW2 -> JD pin 9
+## KYPD pin 10 ROW1 -> JD pin 10
+## KYPD pin 11 GND
+## KYPD pin 12 VCC
+
+set_property -dict { PACKAGE_PIN V15   IOSTANDARD LVCMOS33 } [get_ports { kypd_col4 }]; # JD pin 1
+set_property -dict { PACKAGE_PIN U12   IOSTANDARD LVCMOS33 } [get_ports { kypd_col3 }]; # JD pin 2
+set_property -dict { PACKAGE_PIN V13   IOSTANDARD LVCMOS33 } [get_ports { kypd_col2 }]; # JD pin 3
+set_property -dict { PACKAGE_PIN T12   IOSTANDARD LVCMOS33 } [get_ports { kypd_col1 }]; # JD pin 4
+
+set_property -dict { PACKAGE_PIN T13   IOSTANDARD LVCMOS33 } [get_ports { kypd_row4 }]; # JD pin 7
+set_property -dict { PACKAGE_PIN R11   IOSTANDARD LVCMOS33 } [get_ports { kypd_row3 }]; # JD pin 8
+set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33 } [get_ports { kypd_row2 }]; # JD pin 9
+set_property -dict { PACKAGE_PIN U11   IOSTANDARD LVCMOS33 } [get_ports { kypd_row1 }]; # JD pin 10
+
 ## Pmod SSD on JA/JB upper row
 ## SSD J1 -> JA pins 1-6
 ##   J1 pin 1 AA -> JA pin 1
